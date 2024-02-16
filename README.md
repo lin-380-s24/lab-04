@@ -1,6 +1,5 @@
 # Lab 04: Scaffolding reproducible research
 
-Hi
 
 ## Preparation
 
