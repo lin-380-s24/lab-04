@@ -6,4 +6,9 @@ format: html
 
 ## Reproducible research
 
+Reproducible research is cool.
+
 ## Project management
+
+1. Fork the repo
+2. Clone the repo
