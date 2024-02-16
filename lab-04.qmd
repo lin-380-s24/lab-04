@@ -1,7 +1,8 @@
 ---
-title: "Lab 04"
+title: "Lab 04: Scaffolding reproducible research"
 author: "Lin Wang"
 format: html
+bibliography: bibliography.bib
 ---
 
 ## Reroducible reseaarch
@@ -95,5 +96,3 @@ I found formatting text in R Markdown to be relatively straightforward, but unde
 For reproducible research, I will read a bit more about @goodman2016does's book. I am curious about Git features like rebasing and resloving merge conflicts that I might encounter in near future. There is a book named Pro Git written by @chacon2014pro which seems interesting to explore.
   
 ## References
-
-
