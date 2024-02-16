@@ -4,23 +4,96 @@ author: "Lin Wang"
 format: html
 ---
 
-## Quarto
+## Reroducible reseaarch
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+### *What reproducible research is?*
 
-## Running Code
+- @goodman2016does mentioned that "The term reproducible research refers to the idea that the ultimate product of academic research is the paper along with the full computational environment used to produce the results in the paper such as the code, data, text files, etc., that can be used to reproduce the results and create new work based on the research."
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+- From what I understand about @goodman2016does's definition, it is the practice of conducting scientific studies in a way that allows others to independently have unlimited access to and replicate the results using the same data and methods.
 
-```{r}
-1 + 1
-```
+### *Why it is an important component of modern science?*
 
-You can add options to executable code like this 
+Reproducible research is important in today's science because it lets others check and confirm study results. It also makes research transparent by openly sharing methods and data. This helps scientists work together and build on each others' works. It reduces wasted effort and boosts trust in scientific findings.
 
-```{r}
-#| echo: false
-2 * 2
-```
+### *When we say "reproducible research", what do we mean?*
 
-The `echo: false` option disables the printing of code (only output is displayed).
+We're referring to conducting scientific studies in a way that allows others to repeat the same experiments or analyses and achieve similar results.
+
+### *What is the difference between the 'computing environment' and the 'project structure'?*
+
+The computing environment is like the setup needed to run a project's code, including software and hardware. It ensures that the code works consistently. The project structure is about how files and folders are arranged in the project. It helps organize different parts like code, data, and documentation, making it easier to understand and work with the project.
+
+### *How does Git and GitHub support reproducible research practices?*
+
+Git and GitHub can support researcher through tracking changes, working together, writing notes, fixing problems, and fixing problems.
+
+- **Track changes:** Git records all changes made to files, so researchers can see what was done and go back if needed.
+
+- **Work Together:** GitHub lets researchers share their work with others, so they can all contribute and improve it together.
+
+- **Write Notes:**  Both Git and GitHub have features for adding notes and explanations, helping researchers explain their work clearly.
+
+- **Fix Problems:**  GitHub helps find and fix any issues or mistakes in the research, ensuring it's reliable.
+
+- **Share with Everyone:** Researchers can use GitHub to share their work openly, making it accessible to anyone who wants to see or use it.
+
+## Project management
+
+1. **Fork the Repository:**
+  - Click "Fork" button on the top right corner on the repository's GitHub page to make a copy.
+
+2. **Clone the Forked Repository:**
+  - Copy the repository's URL.
+  - open RStudio
+  - create new project by clicking the upper right corner button
+  
+  *Or another way to do it:*
+  
+  - Open terminal and type *git clone <repository_url>*.
+
+3. **Edit Files:**
+  - Open the cloned repository.
+  - Make changes to files using a text editor.
+
+4. **Commit Changes:**
+ 
+  - tick the small boxes all all files on upper right corner under Git
+  - click button 'Commit'
+ 
+  *Or another way to do it:*
+ 
+  - Use *git add <file_name>* to stage changes.
+  - Use *git commit -m "Descriptive message"* to commit changes.
+
+5. **Push Changes:**
+
+  - Click the button '*Push* (green up arrow).
+  
+  *Or another way to do it:*
+  
+  - Enter *git push origin main* to send changes to forked repository.
+
+
+## Assessing your progress
+
+
+### ***What did you learn?***
+
+I learned the importance of reproducible research, and how it can have a multiplier effect on my study and future work. Meanwhile, I gained practical knowledge of how to use Git and GitHub for version control, as well as functions like forking, cloning, editting, committing and pushing.
+
+### ***What did you find most/ least challenging?***
+
+I found formatting text in R Markdown to be relatively straightforward, but understanding how Git actually works, like all the steps could be challenging for me, since there are too much thing to learn and I have to make sure all my steps are correct.
+
+### ***What resources did you consult?***
+
+  Except our slides, I reached out help from Youtube videos about forking a repository, like [EEHolmes-DataScience](https://www.youtube.com/watch?v=b6AaTHFIY7U) and [Mauro Lepore](https://www.youtube.com/watch?v=wQY5ohEaumI).
+
+### *** What more would you like to know about reproducible research and/ or Git and GitHub?***
+  
+For reproducible research, I will read a bit more about @goodman2016does's book. I am curious about Git features like rebasing and resloving merge conflicts that I might encounter in near future. There is a book named Pro Git written by @chacon2014pro which seems interesting to explore.
+  
+## References
+
+
