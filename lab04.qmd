@@ -1,0 +1,9 @@
+---
+title: "Lab 04: Scaffolding reproducible research"
+author: "Jerid Francom"
+format: html
+---
+
+## Reproducible research
+
+## Project management
