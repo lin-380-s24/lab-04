@@ -1,26 +1,60 @@
 ---
 title: "lab-04"
 author: "Elaine Lu"
-format: html
+format:
+  html:
+    number-sections: true
+    number-depth: 2
 ---
 
-## Quarto
+# Reproducible research
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+## When we say "reproducible research", what do we mean?
 
-## Running Code
+Reproducible research is research in which the computing environment and project structure, including code, text files, data, etc., that are used to **produce** its ultimate result can be used to **reproduce** the result or even create new projects based on it. In short, the validity of the research can be checked by using its original data and methods to generate the suggested result.
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+## What is the difference between the 'computing environment' and the 'project structure'?
 
-```{r}
-1 + 1
-```
+The computing environment is the hardware, operating system, and software, which may vary from one who produces the project and one who tries to reproduce the project. Project structure, however, the organization of the files and folders that construct the project will always be the same for anyone who forks it from the creator.
 
-You can add options to executable code like this
+## How do Git and GitHub support reproducible research practices?
 
-```{r}
-#| echo: false
-2 * 2
-```
+GitHub hosts Git repositories. It is a platform for individuals to share projects, and others who want to reproduce the project can *fork*, *clone*, and *build new works* on this base, which makes code-sharing and code review easy and efficient.
 
-The `echo: false` option disables the printing of code (only output is displayed).
+# Project management
+
+A step-by-step guide to forking, cloning, editing, committing, and pushing changes to a repository:
+
+## Fork:
+
+Choose the project you want to fork in GitHub, and click the fork button on the top-right corner to create a new fork, renaming and describing the project if needed.
+
+![](fork.png)
+
+## Clone:
+
+Copy the URL like we always do and paste that to our RStudio when creating new project.
+
+![](URl.png)
+
+## Build New Works on this base:
+
+When create new files or make changes on the original files, others cannot see the local changes we make. In order to make these changes go **Public**, we need to first save the file, check the staged box on the ***Git*** channel, hit commit, take notes on what changes we made, and hit the "Push" button, then we will successfully upload the edited version of the files and synchronize with our local repository.
+
+# Self-assessment
+
+## What did you learn?
+
+I learned what is reproducible project, how hardware,operating system, software, and project structure cover the next respectively, how to fork projects from GitHub, clone, and make changes on that.
+
+## What did you find most/ least challenging?
+
+Nothing yet, but challenging part will certain appear as we continue.
+
+## What resources did you consult?
+
+Instructor, reading material, and YouTube.
+
+## What more would you like to know about reproducible research and/ or Git and GitHub?
+
+I would like to know more about how to record our screen and how we can possibly upload that in our quarto documents. I searched a [YouTube video](https://www.youtube.com/watch?v=QlYgnf_qCNo) online and found the instructions about how to insert screenshots into Quarto documents in R.
