@@ -1,26 +1,125 @@
 ---
-title: "Lab 04"
+title: "Lab 04: Scaffolding reproducible research"
 author: "Sicheng Wang"
-format: html
+format: 
+  pdf:
+    number-sections: true
+    toc: true
+    toc-depth: 1
 ---
+# Reproducible research
+## What is reproducible research?
 
-## Quarto
+*    **Reproducible Research**
+In academic setting,  reproducible research refers to work that can be replicated by other scholars following the steps outlined in the `Methodology` part, resulting in the same results as the original author. As outlined in [Recipe #4](https://qtalr.github.io/qtalrkit/articles/recipe-4.html), the concept of reproducible research specifically refers to reproducible projects, which aims to mitigate the impact of varying computing environments by documenting every step, typically through files like a README file outlining the project's objectives and production steps, as well as a DESCRIPTION file detailing the computing environment and packages utilized. This approach is particularly valuable for collaborative work, as it allows others to test the reproducibility and applicability of the work across different settings. 
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
-```
-
-You can add options to executable code like this 
+*    **Computing Environment and Project Structure**
+The computing environment includes hardware (see @fig-1), the operating system (see @fig-2), and apps (see @fig-3), whereas the project structure refers to the files and folders contained in our project. 
 
 ```{r}
+#| label: fig-1
+#| fig-cap: "Computer Hardware from [javaTpoint](https://www.javatpoint.com/computer-hardware-definition)"
 #| echo: false
-2 * 2
+#| message: false
+
+library(knitr)
+
+knitr::include_graphics("computer_hardware.png")
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+```{r}
+#| label: fig-2
+#| fig-cap: "Operating System from [Welcome to CS](https://runestone.academy/ns/books/published/welcomecs2/operating-systems_operating-systems-varieties.html)"
+#| echo: false
+#| message: false
+
+knitr::include_graphics("operating_system.png")
+```
+
+```{r}
+#| label: fig-3
+#| fig-cap: "Computer Hardware from [CODERUS](https://www.coderus.com/software-101-a-complete-guide-to-the-different-types-of-software/)"
+#| echo: false
+#| message: false
+
+knitr::include_graphics("apps.png")
+```
+
+*    **Git and GitHub**
+Git is an app which download in individual' computer which could be used to track changes in your local repositories while Github is a web which allows individuals to share repositories. When connecting them by Rstudio, the repository one made could upload to one's Github account to let others get it by cloning to their own computers or forking to their Github account. And people who cloning or forking others' repositories could also editing in their own computer or in their Github account which would not influence the original author's reporitory. They could use Git app to upload(push) to their own forking repository or replacing the original one if the original author permit that through pull request. Besides, the tracking function of Git makes the changes available to individuals by commiting button. Under the repository in Github, one could also report issues which shows the interactive function of Github. Though the above functions, Github and Git help our project be more reducible.
+
+## Why it is important for modern science?
+
+*    **In academic**, research is interconnected; scholars build upon previous studies. Moreover, interactions among scholars worldwide are becoming increasingly common. Reproducible studies facilitate the review of others' work and enable scholars to offer more informed suggestions by validating previous research. Additionally, reproducible research can help prevent academic misconduct. For scholars collaborating with peers, reproducible research aids in tracking each others' edits and contributions.
+
+*    **For the general public involved in projects**, reproducible research simplifies collaboration, particularly in light of recent significant shifts in work patterns where remote work has become prevalent. With reproducible research, individuals can collaborate more efficiently regardless of their location, enabling them to work remotely with ease.
+
+# Project management (Taking Lab-04 Repository as an Example)
+## Forking
+In Github, when you want to copy others' repositories while do not want to download in your own computer, you use fork which is located at below, see @fig-4:
+
+```{r}
+#| label: fig-4
+#| fig-cap: "Fork"
+#| echo: false
+#| message: false
+
+knitr::include_graphics("fork.png")
+```
+
+## Cloning
+When you decide to download the repositories you found in Github which may be the one owned by you or shared by others, you could use clone option, as seen in below @fig-5:
+
+```{r}
+#| label: fig-5
+#| fig-cap: "Clone"
+#| echo: false
+#| message: false
+
+knitr::include_graphics("clone.png")
+```
+
+## Editing
+Then, we could edit the repository we clone to our computer, like adjusting files' content, adding or deleting files, and so on based on the purpose of your project.
+
+## Committing
+After you made some adjustments to your local repository, you may want to save it. You could `Render on Save`, however, when you are running a long-term project, you may want to revert to the version you done earlier. In that case, you may need to use commit which helps you to track the changes especially when you are collaborating with others. This function is done by Git, here is what you could do when you dealing with the project in Rstudio, see @fig-6:
+
+```{r}
+#| label: fig-6
+#| fig-cap: "Commit"
+#| echo: false
+#| message: false
+
+knitr::include_graphics("commit.png")
+```
+
+You could also leave a commit message to remind yourself the changes you made in this version, see @fig-7:
+
+P.S. 
+
+*    `?` represents the file do not exist in the repository you clone from Github.
+*    `M` represents the file exist in the original repository but have been modified by you
+
+## Pushing
+This step is for individual who wants to refresh the original repository in Github. This is especially useful when you want to keep the repository you shared with others updated or when you are working together with others. Push button helps you to upload the revised local repository to your Github account. In Rstudio's Git pane, your could find the push button, see @fig-8:
+
+```{r}
+#| label: fig-8
+#| fig-cap: "Push"
+#| echo: false
+#| message: false
+
+knitr::include_graphics("push.png")
+```
+
+# Assessment
+## What did you learn?
+
+## What did you find most/ least challenging?
+
+## What resources did you consult?
+Instructor? R or Quarto documentation, Websites (provide links)?
+
+## What more would you like to know about reproducible research and/ or Git and GitHub?
+Find potential resources you might consult to continue your learning. Provide links and a brief description of the resource.k
