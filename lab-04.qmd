@@ -29,22 +29,22 @@ The computing environment is like the setup needed to run a project's code, incl
 
 Git and GitHub can support researcher through tracking changes, working together, writing notes, fixing problems, and fixing problems.
 
-- **Track changes:** Git records all changes made to files, so researchers can see what was done and go back if needed.
+- **Tracking changes:** Git records all changes made to files, so researchers can see what was done and go back if needed.
 
-- **Work Together:** GitHub lets researchers share their work with others, so they can all contribute and improve it together.
+- **Working Together:** GitHub lets researchers share their work with others, so they can all contribute and improve it together.
 
-- **Write Notes:**  Both Git and GitHub have features for adding notes and explanations, helping researchers explain their work clearly.
+- **Writting Notes:**  Both Git and GitHub have features for adding notes and explanations, helping researchers explain their work clearly.
 
-- **Fix Problems:**  GitHub helps find and fix any issues or mistakes in the research, ensuring it's reliable.
+- **Fixing Problems:**  GitHub helps find and fix any issues or mistakes in the research, ensuring it's reliable.
 
-- **Share with Everyone:** Researchers can use GitHub to share their work openly, making it accessible to anyone who wants to see or use it.
+- **Sharing with Everyone:** Researchers can use GitHub to share their work openly, making it accessible to anyone who wants to see or use it.
 
 ## Project management
 
-1. **Fork the Repository:**
+1. **Forking the Repository:**
   - Click "Fork" button on the top right corner on the repository's GitHub page to make a copy.
 
-2. **Clone the Forked Repository:**
+2. **Cloning the Forked Repository:**
   - Copy the repository's URL.
   - open RStudio
   - create new project by clicking the upper right corner button
@@ -53,11 +53,11 @@ Git and GitHub can support researcher through tracking changes, working together
   
   - Open terminal and type *git clone <repository_url>*.
 
-3. **Edit Files:**
+3. **Edittiing Files:**
   - Open the cloned repository.
   - Make changes to files using a text editor.
 
-4. **Commit Changes:**
+4. **Committing Changes:**
  
   - tick the small boxes all all files on upper right corner under Git
   - click button 'Commit'
@@ -67,7 +67,7 @@ Git and GitHub can support researcher through tracking changes, working together
   - Use *git add <file_name>* to stage changes.
   - Use *git commit -m "Descriptive message"* to commit changes.
 
-5. **Push Changes:**
+5. **Pushing Changes:**
 
   - Click the button '*Push* (green up arrow).
   
@@ -91,7 +91,7 @@ I found formatting text in R Markdown to be relatively straightforward, but unde
 
   Except our slides, I reached out help from Youtube videos about forking a repository, like [EEHolmes-DataScience](https://www.youtube.com/watch?v=b6AaTHFIY7U) and [Mauro Lepore](https://www.youtube.com/watch?v=wQY5ohEaumI).
 
-### *** What more would you like to know about reproducible research and/ or Git and GitHub?***
+### ***What more would you like to know about reproducible research and/ or Git and GitHub?***
   
 For reproducible research, I will read a bit more about @goodman2016does's book. I am curious about Git features like rebasing and resloving merge conflicts that I might encounter in near future. There is a book named Pro Git written by @chacon2014pro which seems interesting to explore.
   
