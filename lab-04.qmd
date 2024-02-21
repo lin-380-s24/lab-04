@@ -18,9 +18,8 @@ Version control, both Git and GitHub, are like the “Version History” feature
 
 ## Project management
 
-Open the GitHub website, then "Sign Up" at the top right corner of the homepage. 
-Fill out the sign-up form, insert the personal information then click "Continue." 
-Verify your email address and complete the sign-up process by following additional prompts and providing necessary information for GitHub account. 
+Open the GitHub website, then "Sign Up" at the top right corner of the homepage. Fill out the sign-up form, insert the personal information then click "Continue." Verify your email address and complete the sign-up process by following additional prompts and providing necessary information for GitHub account. 
+
 After the account is set up, first, install Git from the website. Open RStudio on computer and configure Git by going to "Tools" > "Global Options”.  Verify the Git layout by testing. Next, connect RStudio to GitHub by creating a new project in RStudio and choosing "Version Control" > "Git." Enter the URL of GitHub repository, then name the directory, and click "Create Project." 
 
 ## Self Assessment
