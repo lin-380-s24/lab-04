@@ -1,13 +1,20 @@
 ---
 title: "Lab 04: Scaffolding reproducible research"
 author: "Lin Wang"
-format: html
+format:
+  html:
+    toc: true
+    toc-depth: 2
 bibliography: bibliography.bib
 ---
 
-## Reroducible reseaarch
+<!-- Great job with the front-matter. You could also add a TOC for clarity -->
 
-### *What reproducible research is?*
+## Reproducible research
+
+### *What is reproducible research?*
+
+<!-- Really great. Good job bringing in citations to support your description. -->
 
 - @goodman2016does mentioned that "The term reproducible research refers to the idea that the ultimate product of academic research is the paper along with the full computational environment used to produce the results in the paper such as the code, data, text files, etc., that can be used to reproduce the results and create new work based on the research."
 
@@ -48,51 +55,60 @@ Git and GitHub can support researcher through tracking changes, working together
   - Copy the repository's URL.
   - open RStudio
   - create new project by clicking the upper right corner button
-  
+
   *Or another way to do it:*
-  
+
+  <!-- Yes, it is possible to use the terminal to use Git and interact with GitHub. For most, however, it is easier to use the RStudio interface. -->
+
   - Open terminal and type *git clone <repository_url>*.
 
-3. **Edittiing Files:**
+3. **Editing Files:**
   - Open the cloned repository.
   - Make changes to files using a text editor.
 
 4. **Committing Changes:**
- 
-  - tick the small boxes all all files on upper right corner under Git
+
+  - Tick the small boxes all all files on upper right corner under Git
   - click button 'Commit'
- 
+
   *Or another way to do it:*
- 
+
+  <!-- Or `git add -A` to add all the files -->
   - Use *git add <file_name>* to stage changes.
   - Use *git commit -m "Descriptive message"* to commit changes.
 
-5. **Pushing Changes:**
+1. **Pushing Changes:**
 
   - Click the button '*Push* (green up arrow).
-  
+
   *Or another way to do it:*
-  
+
   - Enter *git push origin main* to send changes to forked repository.
 
 
 ## Assessing your progress
 
 
-### ***What did you learn?***
+### *What did you learn?*
+
+<!-- Excellent. You've done an excellent job here! -->
 
 I learned the importance of reproducible research, and how it can have a multiplier effect on my study and future work. Meanwhile, I gained practical knowledge of how to use Git and GitHub for version control, as well as functions like forking, cloning, editting, committing and pushing.
 
-### ***What did you find most/ least challenging?***
+### *What did you find most/ least challenging?*
 
-I found formatting text in R Markdown to be relatively straightforward, but understanding how Git actually works, like all the steps could be challenging for me, since there are too much thing to learn and I have to make sure all my steps are correct.
+I found formatting text in Quarto to be relatively straightforward, but understanding how Git actually works, like all the steps could be challenging for me, since there are too much thing to learn and I have to make sure all my steps are correct.
 
-### ***What resources did you consult?***
+### *What resources did you consult?*
 
-  Except our slides, I reached out help from Youtube videos about forking a repository, like [EEHolmes-DataScience](https://www.youtube.com/watch?v=b6AaTHFIY7U) and [Mauro Lepore](https://www.youtube.com/watch?v=wQY5ohEaumI).
+<!-- Note: the Mauro Lepore video covers the `gh` tool. This is not `git` and while it is a useful tool, it is an advanced tool. ;) -->
 
-### ***What more would you like to know about reproducible research and/ or Git and GitHub?***
-  
-For reproducible research, I will read a bit more about @goodman2016does's book. I am curious about Git features like rebasing and resloving merge conflicts that I might encounter in near future. There is a book named Pro Git written by @chacon2014pro which seems interesting to explore.
-  
+Except our slides, I reached out help from Youtube videos about forking a repository, like [EEHolmes-DataScience](https://www.youtube.com/watch?v=b6AaTHFIY7U) and [Mauro Lepore](https://www.youtube.com/watch?v=wQY5ohEaumI).
+
+### *What more would you like to know about reproducible research and/ or Git and GitHub?*
+
+<!-- Here's the best reference that I'm aware of that covers Git and GitHub using R and RStudio: https://happygitwithr.com/ -->
+
+For reproducible research, I will read a bit more about @goodman2016does's book. I am curious about Git features like rebasing and resolving merge conflicts that I might encounter in near future. There is a book named Pro Git written by @chacon2014pro which seems interesting to explore.
+
 ## References
