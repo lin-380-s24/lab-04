@@ -29,7 +29,9 @@ A step-by-step guide to forking, cloning, editing, committing, and pushing chang
 
 Choose the project you want to fork in GitHub, and click the fork button on the top-right corner to create a new fork, renaming and describing the project if needed.
 
-![](fork.png)
+<!-- You can change the size of markdown images -->
+
+![](fork.png){width="50%"}
 
 ## Clone:
 
@@ -45,7 +47,7 @@ When create new files or make changes on the original files, others cannot see t
 
 ## What did you learn?
 
-I learned what is reproducible project, how hardware,operating system, software, and project structure cover the next respectively, how to fork projects from GitHub, clone, and make changes on that.
+I learned what is reproducible project, how hardware, operating system, software, and project structure cover the next respectively, how to fork projects from GitHub, clone, and make changes on that.
 
 ## What did you find most/ least challenging?
 
@@ -56,5 +58,7 @@ Nothing yet, but challenging part will certain appear as we continue.
 Instructor, reading material, and YouTube.
 
 ## What more would you like to know about reproducible research and/ or Git and GitHub?
+
+<!-- The link here is really good. He takes the 'visual editor' approach, which is fine. If you like that better, all the better. -->
 
 I would like to know more about how to record our screen and how we can possibly upload that in our quarto documents. I searched a [YouTube video](https://www.youtube.com/watch?v=QlYgnf_qCNo) online and found the instructions about how to insert screenshots into Quarto documents in R.
