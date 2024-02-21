@@ -1,4 +1,22 @@
-# Lab 04: Scaffolding reproducible research
+---
+title: "Lab 04: Scaffolding reproducible research"
+author: "Sulmi Hong"
+---
 
- Hello world
+## Reproducible research
+
+- When we say "reproducible research", what do we mean?
+
+It means to make the research process clear and transparent so that other researchers can do the same search and get the same outcome using the same method explained in the reasearch.
+
+- What is the difference between the 'computing environment' and the 'project structure'?
+
+The computing environment is the setup needed to run a project, including software and settings such as types of programming language and version a user use. On the other hand, project structure is about how to organize files and folders in a project. For example, where to code, data, and documents.
+
+- How does Git and GitHub support reproducible research practices?
+Version control, both Git and GitHub, are like the “Version History” feature in Google docs, we can track changes to capture the steps in a project. When necessary, we can retrieve past versions. Git and Github also allows a group working at the same time on by editing and pushing the change that we made.
+
+## Project management
+
+## Self Assessment
  
