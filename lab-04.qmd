@@ -1,26 +1,45 @@
 ---
 title: "Lab 04: Scaffolding reproducible research"
 author: "Sulmi Hong"
+format:
+  html:
+    toc: true
+    toc-depth: 2
 ---
+
+<!-- Summary
+
+
+-->
+
 
 ## Reproducible research
 
-- When we say "reproducible research", what do we mean?
 
+<!-- Just a formatting tweak, you can have the prose after a bullet point align vertically by adding a \ at the end of the bullet with the next line appearing at the left margin. See the examples below. -->
+
+- When we say "reproducible research", what do we mean?\
 It means to make the research process clear and transparent so that other researchers can do the same search and get the same outcome using the same method explained in the reasearch.
 
-- What is the difference between the 'computing environment' and the 'project structure'?
-
+- What is the difference between the 'computing environment' and the 'project structure'?\
 The computing environment is the setup needed to run a project, including software and settings such as types of programming language and version a user use. On the other hand, project structure is about how to organize files and folders in a project. For example, where to code, data, and documents.
 
-- How does Git and GitHub support reproducible research practices?
+- How does Git and GitHub support reproducible research practices?\
 Version control, both Git and GitHub, are like the “Version History” feature in Google docs, we can track changes to capture the steps in a project. When necessary, we can retrieve past versions. Git and Github also allows a group working at the same time on by editing and pushing the change that we made.
 
 ## Project management
 
-Open the GitHub website, then "Sign Up" at the top right corner of the homepage. Fill out the sign-up form, insert the personal information then click "Continue." Verify your email address and complete the sign-up process by following additional prompts and providing necessary information for GitHub account. 
+<!-- Signing up for GitHub and the other one-time procedures are not necessary to document. More important is to document the steps to fork, clone, edit, commit, and push changes -->
 
-After the account is set up, first, install Git from the website. Open RStudio on computer and configure Git by going to "Tools" > "Global Options”.  Verify the Git layout by testing. Next, connect RStudio to GitHub by creating a new project in RStudio and choosing "Version Control" > "Git." Enter the URL of GitHub repository, then name the directory, and click "Create Project." 
+- Fork a repository\
+... add description ...
+- Clone a repository\
+Next, connect RStudio to GitHub by creating a new project in RStudio and choosing "Version Control" > "Git." Enter the URL of GitHub repository, then name the directory, and click "Create Project."
+- Edit, commit, and push changes\
+... add description ...
 
 ## Self Assessment
- 
+
+<!-- The self-assessment is a vital part of these labs. It is important to verbalize the learning process and to reflect on the new skills acquired as well as the challenges faced and how they were overcome. -->
+
+... add self-assessment ...
