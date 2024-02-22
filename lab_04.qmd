@@ -1,122 +1,197 @@
 ---
-title: "lab_04"
+title: "Lab 04: Scaffolding reproducible research"
 author: "Yuxi"
 format: html
 ---
 
+<!-- Summary
+
+Excellent job, Yuxi. You have demonstrated a deep understanding of the concepts and provided a clear and detailed explanation of the process. Your step-by-step guide is well-structured and easy to follow. You have also reflected on your learning and identified areas for further exploration. Great work!
+
+Just remember that the formatting of the prose can be improved to make it more legible.
+
+-->
+
 ## Reproducible research
 
- When we say "reproducible research", what do we mean?
- 
- *Reproducible research refers to the idea that the results of a research study can be independently verified by others when they have access to the same data, code, and methods used by the original researcher. The goal is to ensure transparency, reliability, and the ability to replicate or validate findings. Reproducible research involves documenting and sharing not only the results but also the entire process, including data, code, and computational environment, so that others can reproduce the analysis and obtain similar results.*
- 
- What is the difference between the 'computing environment' and the 'project structure'?
- 
- *The 'computing environment' and the 'project structure' are two key components in achieving reproducible research:
-Computing Environment:
+<!-- I would suggest some formatting to make the prose more legible -->
+
+### When we say "reproducible research", what do we mean?
+
+Reproducible research refers to the idea that the results of a research study can be independently verified by others when they have access to the same data, code, and methods used by the original researcher. The goal is to ensure transparency, reliability, and the ability to replicate or validate findings. Reproducible research involves documenting and sharing not only the results but also the entire process, including data, code, and computational environment, so that others can reproduce the analysis and obtain similar results.
+
+### What is the difference between the 'computing environment' and the 'project structure'?
+
+The 'computing environment' and the 'project structure' are two key components in achieving reproducible research:
+
+- Computing Environment:
+
 This refers to the specific software and hardware setup necessary to run the code and analyze the data. It includes information about the programming language version, libraries, and other dependencies.
 Ensuring a consistent computing environment helps prevent issues arising from differences in software versions or configurations across different systems.
-Project Structure:
+
+- Project Structure:
+
 Project structure refers to the organization and layout of files and directories within a research project. A well-defined project structure makes it easier for others (or even the original researcher) to understand and navigate through the project.
-A clear project structure includes directories for data, code, documentation, and other relevant components. It helps maintain a clean and organized workspace, making it easier to share and reproduce the research.* 
+
+<!-- add a space between paragraphs will create the normal division -->
+
+A clear project structure includes directories for data, code, documentation, and other relevant components. It helps maintain a clean and organized workspace, making it easier to share and reproduce the research.*
 
 
- How does Git and GitHub support reproducible research practices?
- 
- *Git and GitHub support reproducible research practices in several ways:
-Version Control:
-Git allows researchers to track changes in their code and documents over time. This facilitates collaboration and helps maintain a historical record of project development.
-GitHub, as a hosting platform for Git repositories, provides a centralized location for version-controlled code and project files.
-Collaboration and Sharing:
-GitHub enables collaboration among researchers by providing a platform to share code and data. Others can fork the repository, make changes, and propose those changes back through pull requests.
-By sharing code and data on GitHub, researchers can make their work accessible to the community, fostering transparency and reproducibility.
-Documentation:
-Git and GitHub encourage good documentation practices. README files, commit messages, and issues can be used to describe the project, provide instructions, and explain changes, making it easier for others to understand and reproduce the research.
-Releases and Tags:
+### How does Git and GitHub support reproducible research practices?
+
+Git and GitHub support reproducible research practices in several ways:
+
+- Version Control:
+  - Git allows researchers to track changes in their code and documents over time. This facilitates collaboration and helps maintain a historical record of project development.
+  - GitHub, as a hosting platform for Git repositories, provides a centralized location for version-controlled code and project files.
+
+<!-- if you want text to align with the bullet vertically, add the \ at the end of the line -->
+- Collaboration and Sharing:\
+GitHub enables collaboration among researchers by providing a platform to share code and data. Others can fork the repository, make changes, and propose those changes back through pull requests. By sharing code and data on GitHub, researchers can make their work accessible to the community, fostering transparency and reproducibility.
+
+- Documentation:\
+Git and GitHub encourage good documentation practices. `README` files, commit messages, and issues can be used to describe the project, provide instructions, and explain changes, making it easier for others to understand and reproduce the research.
+
+- Releases and Tags:\
 GitHub allows researchers to create releases and tags, providing a snapshot of the project at specific points in time. This can be valuable for marking significant milestones or versions of the research.
-By using Git and GitHub, researchers can enhance the reproducibility of their work by maintaining versioned code, facilitating collaboration, and providing a platform for sharing both the code and the associated computing environment.*
+By using Git and GitHub, researchers can enhance the reproducibility of their work by maintaining versioned code, facilitating collaboration, and providing a platform for sharing both the code and the associated computing environment.
 
 ## Project management
 
 Describe the process of forking, cloning, editing, committing, and pushing changes to a repository ([Scenario A](https://qtalr.github.io/qtalrkit/articles/recipe-4.html)). Create a step-by-step guide that you can use to refer back to in the future.
 
-*Scenario A: Forking, Cloning, Editing, Committing, and Pushing Changes to a Repository
+**Scenario B: Forking, Cloning, Editing, Committing, and Pushing Changes to a Repository**
+
 Fork the Repository:
-Go to the GitHub repository you want to contribute to.
-Click the "Fork" button in the upper right corner of the repository page.
+
+- Go to the GitHub repository you want to contribute to.
+- Click the "Fork" button in the upper right corner of the repository page\
 This creates a copy (fork) of the repository under your GitHub account.
+
 Clone the Forked Repository:
-Open a terminal on your local machine.
-Use the following command to clone the forked repository to your local machine:
-Copy code
+
+<!-- Note: that using `git` commands at the terminal works, but in class we have been using the RStudio interface to do these things. It might be better to update your process with a description of the steps using the RStudio interface that we have used in class. -->
+
+- Open a terminal on your local machine.
+- Use the following command to clone the forked repository to your local machine:
+
+<!-- We can show code (without running it) as follows: -->
+
+```bash
 git clone https://github.com/your-username/repository.git
-Replace "your-username" with your GitHub username and "repository" with the name of the repository.
-Create a Branch:
-Change into the repository directory:
-Copy code
-cd repository
-Create a new branch for your changes:
-Copy code
-git checkout -b feature-branch
-Replace "feature-branch" with a descriptive name for your branch.
+```
+
+<!-- 'bash' is the language of the terminal -->
+
+- Replace "your-username" with your GitHub username and "repository" with the name of the repository.
+
+<!-- No need to create a new branch, we will use 'main' -->
+
 Make Edits:
-Open the project files in your preferred code editor.
-Make the necessary edits or additions.
+
+- Open the project files in your preferred code editor (*e.g.* RStudio)
+- Make the necessary edits or additions.
+
 Commit Changes:
-Save your changes and return to the terminal.
-Stage the changes for commit:
-Copy code
+
+- Save your changes and return to the terminal.
+- Stage the changes for commit:
+
+```bash
 git add .
-Commit the changes with a descriptive message:
-Copy code
+```
+
+- Commit the changes with a descriptive message:
+
+```bash
 git commit -m "Add descriptive message about changes"
+```
+
 Push Changes to Your Fork:
-Push the committed changes to your forked repository on GitHub:
-Copy code
-git push origin feature-branch
-Replace "feature-branch" with the name of your branch.
-Create a Pull Request:
-Go to your forked repository on GitHub.
-Switch to the branch you just pushed.
-Click the "New Pull Request" button.
-Provide a title and description for your pull request.
-Click "Create Pull Request" to submit your changes for review.
-Review and Merge:
-The repository owner or collaborators can review your pull request.
-If everything is satisfactory, they can merge your changes into the main branch.
+
+- Push the committed changes to your forked repository on GitHub:
+
+```bash
+git push origin main
+```
+
+<!-- About Pull Requests:
+
+Pull Requests are a way to propose changes to the original repository. For the labs we will not be using them, as we are not making changes to the original repository, only to our own forks.
+
+However, when I review your work and submit feedback to you, I will be using Pull Requests to do so. But this is done on GitHub, not in the terminal. -->
+
 Sync Fork (Optional):
-To keep your fork up-to-date with the original repository, add the original repository as a remote:
-Copy code
+
+- To keep your fork up-to-date with the original repository, add the original repository as a remote:
+
+```bash
 git remote add upstream https://github.com/original-repository/repository.git
-Fetch the changes from the original repository:
-Copy code
+```
+
+- Fetch the changes from the original repository:
+
+```bash
 git fetch upstream
-Merge the changes into your local branch:
-Copy code
+```
+
+- Merge the changes into your local branch:
+
+```bash
 git merge upstream/main
-Push the updated branch to your fork:
-Copy code
-git push origin feature-branch*
+```
+
+- Push the updated branch to your fork:
+
+```bash
+git push origin main
+```
 
 ## Assessing your progress
 
-*What I Learned:
+### What I Learned
+
+<!--
+Wow, you've demonstrated a lot of learning in this lab! I'm impressed with the depth of your understanding of the concepts and the clarity of your explanations. You've also done a great job of applying the concepts to the scenario and providing a step-by-step guide for future reference. Great work!
+
+Note you may want to consider updating the steps with the RStudio interface, as we have been using in class. But it is not required, if you are comfortable with using the terminal, that's fine --in fact it is what I use!
+
+-->
+
 Throughout this lab, I gained a deeper understanding of the practical aspects of reproducible research and the role of Git and GitHub in supporting collaborative and transparent workflows.
+
 I learned the step-by-step process of forking, cloning, creating branches, making edits, committing changes, and pushing those changes to a repository. The integration of these actions in a collaborative environment was particularly insightful.
-Most/Least Challenging:
-The most challenging aspect for me was initially grasping the concept of branching and understanding how it fits into the collaborative development process. However, with practice, it became clearer.
-The least challenging part was forking and cloning repositories, as these are fundamental Git actions that I was already familiar with.
-Resources Consulted:
+
+### Most/Least Challenging:
+
+The most challenging aspect for me was initially grasping the concept of branching and understanding how it fits into the collaborative development process. However, with practice, it became clearer. <!-- I encourage you to research branching and how it fits into the collaborative development process, but for now we won't go into it in too much detail. -->
+
+The least challenging part was forking and cloning repositories, as these are fundamental Git actions that I was already familiar with. <!-- Great. -->
+
+### Resources Consulted:
+
+<!-- A really great resource is https://happygitwithr.com/ It covers the key topics of Git and GitHub for R/ RStudio users -->
+
 I referred to the GitHub Docs for detailed guidance on forking, cloning, and pull requests.
-Stack Overflow was a valuable resource for finding solutions to specific issues I encountered during the process.
-The Pro Git book provided in-depth explanations of Git concepts and commands.
-What I'd Like to Know More:
+
+Stack Overflow was a valuable resource for finding solutions to specific issues I encountered during the process. <!-- Yes! -->
+
+The Pro Git book provided in-depth explanations of Git concepts and commands. <!-- I'm not familar with this book, but it sounds like a great resource! Do you have a link? You might share it in our course discussion page https://github.com/orgs/lin-380-s24/discussions-->
+
+### What I'd Like to Know More:
+
+<!-- Consult the https://happygitwithr.com/ webbook -->
+
 I would like to explore advanced Git features, such as rebasing and resolving merge conflicts, to enhance my understanding of Git workflows in more complex scenarios. Additionally, delving deeper into Git hooks and actions for automating parts of the reproducibility process seems intriguing.
+
 Potential Resources for Continued Learning:
-Advanced Git Topics:
-Atlassian Git Tutorials - Comprehensive tutorials covering advanced Git topics.
-Git Pro Book - The Pro Git book mentioned earlier provides detailed insights into Git's advanced features.
-Automation in Reproducible Research:
-GitHub Actions Documentation - Explore GitHub Actions for automating workflows in your repositories.
-Continuous Integration and Continuous Deployment (CI/CD) - Understand the principles and practices of CI/CD.
-By exploring these resources, I aim to deepen my understanding of Git, GitHub, and reproducible research while gaining proficiency in advanced Git workflows and automation techniques.*
+
+- Advanced Git Topics:
+  - Atlassian Git Tutorials - Comprehensive tutorials covering advanced Git topics.
+  - Git Pro Book - The Pro Git book mentioned earlier provides detailed insights into Git's advanced features.
+  - Automation in Reproducible Research:
+    - GitHub Actions Documentation - Explore GitHub Actions for automating workflows in your repositories.
+    - Continuous Integration and Continuous Deployment (CI/CD) - Understand the principles and practices of CI/CD.
+
+By exploring these resources, I aim to deepen my understanding of Git, GitHub, and reproducible research while gaining proficiency in advanced Git workflows and automation techniques.
