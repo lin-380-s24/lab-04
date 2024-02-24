@@ -1,20 +1,25 @@
 ---
 title: "Lab 04: Scaffolding reproducible research"
 author: "Sicheng Wang"
-format: 
+format:
   pdf:
     number-sections: true
     toc: true
     toc-depth: 1
 ---
+
+<!-- Summary
+Great job. You've really done a lot of research on your own. Your content is very well organized and you've done a great job of integrating your understanding of reproducible research and Git and GitHub into practical situations. Keep up the great work!
+-->
+
 # Reproducible research
 ## What is reproducible research?
 
 *    **Reproducible Research**
-In academic setting,  reproducible research refers to work that can be replicated by other scholars following the steps outlined in the `Methodology` part, resulting in the same results as the original author. As outlined in [Recipe #4](https://qtalr.github.io/qtalrkit/articles/recipe-4.html), the concept of reproducible research specifically refers to reproducible projects, which aims to mitigate the impact of varying computing environments by documenting every step, typically through files like a README file outlining the project's objectives and production steps, as well as a DESCRIPTION file detailing the computing environment and packages utilized. This approach is particularly valuable for collaborative work, as it allows others to test the reproducibility and applicability of the work across different settings. 
+In academic setting,  reproducible research refers to work that can be replicated by other scholars following the steps outlined in the `Methodology` part, resulting in the same results as the original author. As outlined in [Recipe #4](https://qtalr.github.io/qtalrkit/articles/recipe-4.html), the concept of reproducible research specifically refers to reproducible projects, which aims to mitigate the impact of varying computing environments by documenting every step, typically through files like a README file outlining the project's objectives and production steps, as well as a DESCRIPTION file detailing the computing environment and packages utilized. This approach is particularly valuable for collaborative work, as it allows others to test the reproducibility and applicability of the work across different settings.
 
 *    **Computing Environment and Project Structure**
-The computing environment includes hardware (see @fig-1), the operating system (see @fig-2), and apps (see @fig-3), whereas the project structure refers to the files and folders contained in our project. 
+The computing environment includes hardware (see @fig-1), the operating system (see @fig-2), and apps (see @fig-3), whereas the project structure refers to the files and folders contained in our project.
 
 ```{r}
 #| label: fig-1
@@ -46,7 +51,7 @@ knitr::include_graphics("apps.png")
 ```
 
 *    **Git and GitHub**
-Git is an app which download in individual' computer which could be used to track changes in your local repositories while Github is a web-based which allows individuals to share repositories. When connecting them by RStudio, the repository one made could upload to one's GitHub account to let others get it by cloning to their own computers or forking to their GitHub account. And people who cloning or forking others' repositories could also editing in their own computer or in their GitHub account which would not influence the original author's reporitory. They could use Git app to upload(push) to their own forking repository or replacing the original one if the original author permit that through pull request. Besides, the tracking function of Git makes the changes available to individuals by commiting button. Under the repository in GitHub, one could also report issues which shows the interactive function of GitHub. Though the above functions, GitHub and Git help our project be more reducible.
+Git is an app which download in individual' computer which could be used to track changes in your local repositories while Github is a web-based which allows individuals to share repositories. When connecting them by RStudio, the repository one made could upload to one's GitHub account to let others get it by cloning to their own computers or forking to their GitHub account. And people who cloning or forking others' repositories could also editing in their own computer or in their GitHub account which would not influence the original author's repository. They could use Git app to upload(push) to their own forking repository or replacing the original one if the original author permit that through pull request. Besides, the tracking function of Git makes the changes available to individuals by committing button. Under the repository in GitHub, one could also report issues which shows the interactive function of GitHub. Though the above functions, GitHub and Git help our project be more reproducible.
 
 ## Why it is important for modern science?
 
@@ -105,7 +110,7 @@ You can also provide a `commit message` to remind yourself of the changes made i
 knitr::include_graphics("commit_message.png")
 ```
 
-P.S. 
+P.S.
 
 *    The symbol `?`  indicates that the file does not exist in the repository you cloned from GitHub.
 *    `M` indicates that the file exists in the original repository but has been modified by you.
@@ -149,9 +154,13 @@ I find [Lab-04](https://github.com/lin-380-s24/lab-04) to be relatively straight
 
 ## What resources did you consult?
 *    For question one - the inability to push my local repository to my GitHub account, I sought assistance from ChatGPT and the professor. ChatGPT suggested four potential issues: credential problems, authorization problems, operating system (OS) issues, and spelling errors. However, I was unsure which one I was experiencing, so I followed the professor's advice to reconnect my Git account and GitHub account, which ultimately resolved the issue for me.
-*    For the second question - changing my Git username and adding an email address in Git, I attempted to find a solution by watching a video titled [How to Install and Configure Git and GitHun on Windows 11](https://www.youtube.com/watch?v=AdzKzlp66sQ&t=700s). However, the video used an app called `test.js` during the process, which I felt might not be suitable for my situation. As a result, I decided to wait until the professor covered this topic in today's class.
+<!-- Something to note: your computer may be Windows, but the RStudio you are running is in Docker which is a Linux operating system. So if you do search for answers pertaining to system-level things, you need to specify Linux. -->
+*    For the second question - changing my Git username and adding an email address in Git, I attempted to find a solution by watching a video titled [How to Install and Configure Git and GitHub on Windows 11](https://www.youtube.com/watch?v=AdzKzlp66sQ&t=700s). However, the video used an app called `test.js` during the process, which I felt might not be suitable for my situation. As a result, I decided to wait until the professor covered this topic in today's class.
 
 ## What more would you like to know about reproducible research and/ or Git and GitHub?
+
+<!-- You've been doing a lot of great research on your own. This is excellent! You've also demonstrated a good ability to distinguish between relevant and non-relevant resources. -->
+
 Yesterday, when I checked today's [Lab-04](https://github.com/lin-380-s24/lab-04), I noticed something related to `creating issues` in the repository. However, when I forked the repository to my GitHub account, I couldn't find the `issues` tab, only the `pull requests` tab was visible. To gain clarity, I watched a video titled  [Creating issues in GitHub Projects](https://www.youtube.com/watch?v=-xM2MT0Nv8k&t=17s), hoping it would provide insight into locating the `issues` tab, even though it primarily focused on creating issues in GitHub Projects. Unfortunately, the video didn't address the issue directly because it directly went to this page, as shown in @fig-10. Then, I continued my search and found that `pull requests` are closely related to `issues` when I conducted a Google search, as shown in @fig-11. By clicking on the `pull requests` tab in my GitHub account, I accidentally stumbled upon the `issues` tab, as seen in @fig-12. Additionally, I was curious about some basic functions of GitHub, so I watched a tutorial titled [GitHub Tutorial](https://www.youtube.com/watch?v=iv8rSLsi1xo). However, this tutorial primarily focused on downloading the GitHub desktop app to connect to a remote repository in the GitHub web interface, which differs from what we learned using Git. It also covered how to create a remote repository in GitHub, similar to  [Scenario C](https://qtalr.github.io/qtalrkit/articles/recipe-4.html). However, it didn't delve into functions such as discussions, pull requests, or issues.
 
 ```{r}

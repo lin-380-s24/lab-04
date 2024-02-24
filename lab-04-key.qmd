@@ -1,0 +1,13 @@
+---
+title: "Lab 04: Scaffolding reproducible research"
+format: html
+bibliography: bibliography.bib
+---
+
+## What is reproducible research?
+
+Reproducible research is cool.
+
+## Title 
+
+## References
