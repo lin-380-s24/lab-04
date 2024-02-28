@@ -4,23 +4,38 @@ author: "Yuncheng Ni"
 format: html
 ---
 
-## Quarto
+## Reproducible research
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+i When we say "reproducible research", we refer to the combination of computing environment and the project structure.
 
-## Running Code
+ii The computing environment is the hardware, operating system, and software that are used, such as Win10 and R. The project structure is the organization of the files and folders that make up the project.
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+iii It can help with tracking changes to local repository, such as revert to previous versions of files, create and edit parallel copies of files and then selectively integrate them and so on.
 
-```{r}
-1 + 1
-```
+## Project management
 
-You can add options to executable code like this 
+![](github-features-drawio.png)
 
-```{r}
-#| echo: false
-2 * 2
-```
+-Fork
 
-The `echo: false` option disables the printing of code (only output is displayed).
+Copy the original repository to our own github account, before cloning it to the computer environment
+
+-Clone
+
+Copy and download the repository to the computing environment
+
+-Edit
+
+Edit the directories and files in local repository
+
+-Commit
+
+Log edit changes to the git tracking system
+
+-Push
+
+Sync edit changes to the remote repository
+
+## Assessing
+
+In this section I learned the basic of using github. I find it less frustrating comparing to the programming in previous lab, while I should keep the different process and their function in mind. I will continue to learn how to make the using of github into practial use.
