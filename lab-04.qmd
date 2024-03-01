@@ -6,36 +6,47 @@ format: html
 
 ## Reproducible research
 
-i When we say "reproducible research", we refer to the combination of computing environment and the project structure.
+<!-- Use a period '.' after your numbered list symbol -->
 
-ii The computing environment is the hardware, operating system, and software that are used, such as Win10 and R. The project structure is the organization of the files and folders that make up the project.
+i. When we say "reproducible research", we refer to the combination of computing environment and the project structure.
 
-iii It can help with tracking changes to local repository, such as revert to previous versions of files, create and edit parallel copies of files and then selectively integrate them and so on.
+ii. The computing environment is the hardware, operating system, and software that are used, such as Win10 and R. The project structure is the organization of the files and folders that make up the project.
+
+iii. It can help with tracking changes to local repository, such as revert to previous versions of files, create and edit parallel copies of files and then selectively integrate them and so on.
 
 ## Project management
 
+<!--
+This markdown syntax for images is correct, the problem is that the file `github-features-drawio.png` is not in your project directory.
+
+I added the file to your directory, so now the same syntax will work.
+
+-->
+
 ![](github-features-drawio.png)
 
--Fork
+<!-- You need a space ' ' between the bullet '- ' and the text -->
 
+- Fork\
 Copy the original repository to our own github account, before cloning it to the computer environment
 
--Clone
+<!-- (optional) A neat trick to get the text following a bullet to align vertically is to add a `\` after the text of the bullet  -->
 
+- Clone\
 Copy and download the repository to the computing environment
 
--Edit
-
+- Edit\
 Edit the directories and files in local repository
 
--Commit
-
+- Commit\
 Log edit changes to the git tracking system
 
--Push
-
+- Push\
 Sync edit changes to the remote repository
 
 ## Assessing
 
 In this section I learned the basic of using github. I find it less frustrating comparing to the programming in previous lab, while I should keep the different process and their function in mind. I will continue to learn how to make the using of github into practial use.
+
+
+<!-- Make sure to elaborate as much as you can in these self-assessment sections. This is for you and for me to see your progress, the challenges, and the things you want to know more about. -->
